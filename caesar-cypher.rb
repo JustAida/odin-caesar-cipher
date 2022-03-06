@@ -21,8 +21,8 @@ def caesar_cipher(string_array, shift)
       # Add the shifted alphabet to the modified_string.
       # Use the ternary operator to check if the alphabet should be capitalized.
       modified_string += ALPHABETS_ARRAY.include?(alphabet) ? 
-        ALPHABETS_ARRAY[shift_index] :
-        ALPHABETS_ARRAY[shift_index].upcase
+          ALPHABETS_ARRAY[shift_index] :
+          ALPHABETS_ARRAY[shift_index].upcase
     else
       # If the alphabet is not in ALPHABETS_ARRAY then add it without shifting.
       modified_string += alphabet
@@ -32,4 +32,4 @@ def caesar_cipher(string_array, shift)
   modified_string
 end
 
-p caesar_cipher(string_array, shift)
+puts caesar_cipher(string_array, shift)
